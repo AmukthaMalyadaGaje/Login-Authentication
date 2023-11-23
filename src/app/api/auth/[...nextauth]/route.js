@@ -3,7 +3,6 @@ import GithubProvider from "next-auth/providers/github";
 import GoogleProvider from "next-auth/providers/google";
 
 export const authOptions = {
-  // Configure one or more authentication providersq
   providers: [
     GoogleProvider({
       clientId: process.env.GOOGLE_CLIENT_ID,
@@ -13,7 +12,6 @@ export const authOptions = {
       clientId: process.env.GIHUB_CLIENT_ID,
       clientSecret: process.env.GITHUB_CLIENT_SECRET,
     }),
-    // ...add more providers here
 ],
 secret : process.env.SECRET,
 }
